@@ -1,0 +1,2 @@
+{"ts":1360873247070,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1360873288807,"patch":[[{"diffs":[[1,"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n    <head>\r\n\t\t<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"> \r\n\t\t<meta charset=\"utf-8\">\r\n\t\t<title>Hello</title>\r\n    </head>\r\n    <body>\r\n    <%- body %>\t\r\n\t</body>\r\n</html>"]],"start1":0,"start2":0,"length1":0,"length2":229}]],"length":229,"saved":false}
