@@ -36,7 +36,7 @@ app.get('/login', function(req,res){
 	appDb.on('load', function() {
 		sectionsDb = dirty('sections.db');
 		sectionsDb.on('load', function() {
-			res.render('login', {locals:locals,sections:sectionsDb,app:appDb.get('app'),page:appDb.get('page'),err:req.query["err"]});
+			res.render('login', {locals:locals,err:req.query["err"]});
 		});
 	});
 });
