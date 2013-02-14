@@ -1,1 +1,2 @@
 {"ts":1360869925325,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"node-url-to-image\n=================\n\nCapture Web pages as images (Web screenshots) using Node.js and WebKit"]],"start1":0,"start2":0,"length1":0,"length2":107}]],"length":107}
+{"contributors":[],"silentsave":false,"ts":1360874604758,"patch":[[{"diffs":[[0,"d WebKit"],[1,". Simple specify the URL of the Web page and a image snapshot is created."]],"start1":99,"start2":99,"length1":8,"length2":81}]],"length":180,"saved":false}

@@ -1,6 +1,6 @@
 var port = process.env.PORT || 4000,
     app = require('./app').init(port),
-    image = require('./lib/image'),
+    Image = require('./lib/image.js').Image,
     dirty = require('dirty');
 	
 var locals = {
@@ -83,7 +83,7 @@ app.get('/img/:url?', function(req,res){
 	
     var urlToFetch = req.param["url"] ? req.param["url"] : "http://www.google.com";
     
-    new Image({ url: urlToFetch }).convert (function (err, data) {
+    new require('./lib/image.js').Image({ url: urlToFetch }).convert (function (err, data) {
         if (err) {
             console.log(err);
         }
