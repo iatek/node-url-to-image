@@ -22,9 +22,9 @@ app.get('*', function(req,res,next){
 app.get('/', function(req,res){
 	console.log("show home page");
 
-    locals.date = new Date().toLocaleDateString();
+    //locals.date = new Date().toLocaleDateString();
 	
-	res.render('index.ejs', {locals:locals});
+	res.render('index.ejs', locals);
 });
 
 app.get('/login', function(req,res){
@@ -78,7 +78,7 @@ app.get('/logout', function(req,res){
 });
 
 
-app.get('/img/:url', function(req,res){
+app.get('/img/:url?', function(req,res){
     console.log("image");
 	
     var urlToFetch = req.param["url"] ? req.param["url"] : "http://www.google.com";
