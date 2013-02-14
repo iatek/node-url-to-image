@@ -1,6 +1,6 @@
 var port = process.env.PORT || 4000,
     app = require('./app').init(port),
-    image = require('./image'),
+    image = require('./lib/image'),
     dirty = require('dirty');
 	
 var locals = {
