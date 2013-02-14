@@ -1,6 +1,6 @@
 var port = process.env.PORT || 4000,
     app = require('./app').init(port),
-    image = require('./image');
+    image = require('./image'),
     dirty = require('dirty');
 	
 var locals = {
@@ -8,7 +8,7 @@ var locals = {
 	// add other vars here
 };
 
-var userDb = dirty('user.db');
+//var userDb = dirty('user.db');
 
 app.get('*', function(req,res,next){
 	if (req.session) {
