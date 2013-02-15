@@ -78,7 +78,7 @@ app.get('/logout', function(req,res){
 });
 
 
-app.get('/img/:url', function(req,res){
+app.get('/img/:url?', function(req,res){
     console.log("image");
 	
     var urlToFetch = req.params["url"] ? req.params["url"] : "http://www.google.com";
