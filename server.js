@@ -83,7 +83,7 @@ app.get('/img/:url?', function(req,res){
 	
     var urlToFetch = req.param["url"] ? req.param["url"] : "http://www.google.com";
     
-    img.getImage(urlToFetch,req,res);
+    img.getImage(req,res,urlToFetch);
     
     
 	//res.redirect('/');
