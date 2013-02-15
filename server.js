@@ -24,7 +24,7 @@ app.get('/', function(req,res){
 
     //locals.date = new Date().toLocaleDateString();
 	
-	res.render('index', locals);
+	res.render('index.ejs', locals);
 });
 
 app.get('/login', function(req,res){
