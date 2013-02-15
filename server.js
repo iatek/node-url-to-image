@@ -24,7 +24,7 @@ app.get('/', function(req,res){
 
     //locals.date = new Date().toLocaleDateString();
 	
-	res.render('index.ejs', locals);
+	res.render('index', locals);
 });
 
 app.get('/login', function(req,res){
@@ -86,7 +86,7 @@ app.get('/img/:url?', function(req,res){
     img.getImage(urlToFetch,req,res);
     
     
-	res.redirect('/');
+	//res.redirect('/');
 });
 
 
